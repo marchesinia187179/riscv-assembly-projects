@@ -8,9 +8,7 @@
 # t6: general container
 
 initialization:
-    buffer: .space 6
-
-    la a0, buffer
+    addi a0, zero, 4    #initialization of a0
     addi t6, zero, 0x48 # add temporarily 'H' into t6
     sb t6, 0(a0)    # add the byte saved in t6 into a0
 
